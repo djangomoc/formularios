@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Hello world</h1>
+
+	<form method="POST">
+		{% csrf_token %}
+		<label>Nome</label>
+		<input type="text" name="name"><br><br>
+
+		<label>Ativo</label>
+		<input type="radio" name="active"><br><br>
+
+		<label>Semana</label>
+		<input type="week" name="week"><br><br>
+
+		<label>Mes</label>
+		<input type="month" name="month"><br><br>
+
+		<button type="submit">Enviar</button>	
+	</form>
+
+	<p>Nome digitado: {{name}}</p><br>
+	<p>Status: {{active}}</p><br>
+	<p>Semana: {{week}}</p><br>
+	<p>Mês: {{month}}</p><br>
+
+
+</body>
+</html>
