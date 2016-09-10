@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<form method="POST">
+		{% csrf_token %}
+		{{form}}
+		<button type="submit">Enviar</button>
+	</form>
+
+	{% if name %}
+		<h2>Olá: {{name}}</h2>
+	{% endif %}
+
+</body>
+</html>
